@@ -112,10 +112,6 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    logo: {
-        width: 170,
-        height: 80,
-    },
     title: {
         color: 'white',
         fontSize: 35,

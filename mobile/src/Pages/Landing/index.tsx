@@ -38,11 +38,11 @@ const Landing = () => {
     const route = useRoute<RouteProp<IUser, 'login'>>()
 
     const handleNavigateToGiveClassesPage = () => {
-        navigation.navigate('GiveClasses')
+        navigation.navigate('OfferServiceClasses')
     }
 
     const handleNavigateStudyTabsPage = () => {
-        navigation.navigate('StudyTabs')
+        navigation.navigate('ServiceTabs')
     }
 
     const logout = () => {

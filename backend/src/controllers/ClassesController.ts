@@ -38,7 +38,7 @@ export default {
         
             await trx.commit()
         
-            return res.status(201).send('classe cadastrada')
+            return res.status(201).send('serviço cadastrada')
         } catch(err) {
             await trx.rollback()
             return res.status(400).json({error: "unexpected error"})
@@ -54,7 +54,7 @@ export default {
 
         if(!filters.week_day || !filters.subject || !filters.time) {
             return res.status(400).json({
-                error: 'Missing filters to search classes'
+                error: 'Missing filters to search service'
             })
         }
 
@@ -88,6 +88,6 @@ export default {
     async deleteClass(req: Request, res: Response) {
         const { id } = req.params
         await db('classes').where({id}).delete()
-        res.status(200).send('classe deletada com sucesso')
+        res.status(200).send('serviço deletado com sucesso')
     }
 }
