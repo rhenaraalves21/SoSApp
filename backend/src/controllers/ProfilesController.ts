@@ -63,9 +63,9 @@ export default {
         })
 
         await transporter.sendMail({
-            from: '"Proffy" <brenomacedo5432@gmail.com>', // sender address
+            from: '"SoS App" <rhenaraalves21@gmail.com>', // sender address
             to: email,
-            subject: "Redefinição de Senha - Proffy", // Subject line
+            subject: "Redefinição de Senha - Sos App", // Subject line
             text: "Foi solicitada a redefinição da sua senha na nossa plataforma! Para prosseguir, entre no link a seguir e preencha os campos: ", // plain text body
             html: `<div style="background-color: #8257E5; width: 500px; height: 400px;">
                 <h1 style="color: white; font-size: 28px; text-align: center; padding: 40px;">Redefinição

@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useContext } from 'react'
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native'
 import PageHeader from '../../Components/PageHeader'
-import TeacherItem from '../../Components/TeacherItem'
+import TeacherItem from '../../Components/ServiceItem'
 import api from '../../services/api'
 import { useFocusEffect } from '@react-navigation/native'
 import UserContext from '../../Contexts/UserContext'
 
-interface Teacher {
+interface Service {
     id: number
     avatar: string
     bio: string
@@ -43,9 +43,9 @@ const Favorites = () => {
                 paddingHorizontal: 16,
                 paddingBottom: 16
             }} style={styles.teacherList} >
-                {favorites.map((teacher: Teacher) => {
+                {favorites.map((service: Service) => {
                     return (
-                        <TeacherItem key={teacher.id} teacher={teacher} favorited />
+                        <TeacherItem key={service.id} service={service} favorited />
                     )
                 })}
             </ScrollView>
