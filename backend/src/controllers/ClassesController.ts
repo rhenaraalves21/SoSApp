@@ -30,7 +30,7 @@ export default {
                 const { week_day, from, to } = scheduleItem
         
                 return {
-                    week_day, from: convertHourToMinutes(from), to: convertHourToMinutes(to), class_id
+                    week_day, from: convertHourToMinutes("01:00"), to: convertHourToMinutes("23:00"), class_id
                 }
             })
         
